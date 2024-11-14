@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftLogix - Outdoor Lighting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+    <div class="top-bar bg-dark text-white py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-bar-left">
+                <span>📍 Bengaluru</span><span> 📞 +91 96117 66119</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="text-white text-decoration-none">Get a Quote!</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-dark.png" alt="SoftLogix Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#company-intro">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service-section">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product-section">OUR PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div id="customCarousel" class="carousel slide">
+            <div class="carousel-inner" id="carouselImages">
+                <div class="carousel-item active" data-index="0">
+                    <img src="img/banner1.jpg" class="d-block w-100" alt="Outdoor Lighting">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4">Welcome to <span style="color: #f9d342;">SoftLogix</span></h1>
+                        <p>Ildy is a great one-page theme, perfect for developers and designers.</p>
+                        <div class="btn-container">
+                            <a href="#company-intro" class="btn btn-learn-more">Learn More</a>
+                            <a href="#contact-section" class="btn btn-download">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item" data-index="1">
+                    <img src="img/banner2.jpg" class="d-block w-100" alt="Solar Lights">
+                    <div class="carousel-caption">
+                        <h1 class="display-4">Energy Efficient Lighting</h1>
+                        <p>Eco-friendly solutions for a brighter future.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-index="2">
+                    <img src="img/banner3.jpg" class="d-block w-100" alt="Solar Lights">
+                    <div class="carousel-caption">
+                        <h1 class="display-4">Energy Efficient Lighting</h1>
+                        <p>Eco-friendly solutions for a brighter future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="img/icon1.png" alt="Traffic Management">
+                        </div>
+                        <h3 class="service-title">Traffic Management Systems</h3>
+                        <p class="service-description">
+                            With the most fascinating devices, we can help manage traffic and improve the congestion
+                            with minimum effort.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="img/icon2.png" alt="Portable Technology">
+                        </div>
+                        <h3 class="service-title">Portable Technology</h3>
+                        <p class="service-description">
+                            Across numerous sectors, we provide you with portable solutions ideal for sites, events, and
+                            traffic management.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="img/icon3.png" alt="Solar Traffic Solution">
+                        </div>
+                        <h3 class="service-title">Solar Traffic Solution</h3>
+                        <p class="service-description">
+                            Harnessing solar energy is regarded as one of the best sources of energy for industrial
+                            usage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="company-intro" id="company-intro">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 company-info">
+                    <h1 class="heading">WELCOME TO SOFTLOGIX</h1>
+                    <p class="description">
+                        Softlogix has been established as an Electronic Product manufacturing, wholesaling, and trading
+                        company in Bangalore, India. We specialize in Traffic LED Lights, Traffic Signal Controllers,
+                        Solar Lights, and more. Our focus is on Original Equipment Manufacturing (OEM) with a commitment
+                        to quality and innovation.
+                    </p>
+                    <ul class="features-list">
+                        <li>Constructed with an industrial design.</li>
+                        <li>Customized products and services.</li>
+                        <li>Committed to ethical practices.</li>
+                        <li>Continuously improving business practices.</li>
+                        <li>Simplifying the business model.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 image-container text-center">
+                    <img src="img/aboutbg.jpg" alt="Softlogix Illustration" class="illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-feedback-section">
+        <div class="content-container">
+            <!-- Counter Section -->
+            <div class="counter-section">
+                <div class="background-image"></div>
+                <div class="counter-card">
+                    <i class="fa fa-coffee"></i> <!-- Icon for Ordered Coffee's -->
+                    <h2 class="counter" data-target="568">0</h2>
+                    <p>Ordered Coffee's</p>
+                </div>
+                <div class="counter-card">
+                    <i class="fas fa-box"></i> <!-- Icon for Products Delivered -->
+                    <h2 class="counter" data-target="256">0</h2>
+                    <p>Products Delivered</p>
+                </div>
+                <div class="counter-card">
+                    <i class="fas fa-tasks"></i> <!-- Icon for Completed Projects -->
+                    <h2 class="counter" data-target="112">0</h2>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="counter-card">
+                    <i class="fas fa-smile"></i> <!-- Icon for Happy Clients -->
+                    <h2 class="counter" data-target="25">0</h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="feedback-container-full py-5">
+        <div class="feedback-container align-items-center">
+            <!-- Left Section -->
+            <div class="col-md-4 feedback-left text-center text-md-start">
+                <div class="quote-icon fs-1">“</div>
+                <h2>OUR CUSTOMERS FEEDBACK</h2>
+                <p>They say we did a great job!</p>
+                <div class="quote-icon fs-1">”</div>
+            </div>
+
+            <!-- Right Section with Carousel for Multiple Feedbacks -->
+            <div class="col-md-8 feedback-right">
+                <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Feedback Item 1 -->
+                        <div class="carousel-item active">
+                            <div class="text-center">
+                                <div class="profile mb-3">
+                                    <img src="img/feedback1.jpg" class="rounded-circle" alt="Customer Photo">
+                                </div>
+                                <h3>Prakash Raj</h3>
+                                <small>Parallax Inc.</small>
+                                <p>Highly recommended. Very professional services served by helpful and polite
+                                    individuals. Accuracy and integrity are definitely core values here.</p>
+                            </div>
+                        </div>
+                        <!-- Feedback Item 2 -->
+                        <div class="carousel-item">
+                            <div class="text-center">
+                                <div class="profile mb-3">
+                                    <img src="img/feedback1.jpg" class="rounded-circle" alt="Customer Photo">
+                                </div>
+                                <h3>Anjali Kumar</h3>
+                                <small>XYZ Corporation</small>
+                                <p>Exceptional experience! They exceeded our expectations in every way. Their team is
+                                    highly skilled, dedicated, and customer-focused.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev custom-carousel-control" type="button"
+                        data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next custom-carousel-control" type="button"
+                        data-bs-target="#feedbackCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid my-5 mt-0" id="service-section">
+        <h2 class="section-heading">Our <span style="color: #d82121;">Services</span></h2>
+
+        <div class="row service align-items-center mb-3">
+            <div class="col-md-6 service-image">
+                <img src="img/service1.jpg" alt="Service 1 Image" class="img-fluid rounded shadow">
+            </div>
+            <div class="section-content col-md-6">
+                <h2>Smart Traffic Solutions</h2>
+                <p>With an end-to-end IoT solution for traffic and parking management...</p>
+                <ul>
+                    <li>Reduce congestion by monitoring traffic lights.</li>
+                    <li>Identify structural issues with roadways.</li>
+                    <li>Efficient transportation infrastructure.</li>
+                    <li>Keeping traffic moving more efficiently.</li>
+                </ul>
+                <a href="#" class="btn-service btn-primary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service 2  -->
+        <div class="row service-right align-items-center mb-3 flex-md-row-reverse">
+            <div class="col-md-6 service-image">
+                <img src="img/service2.jpg" alt="Service 2 Image" class="img-fluid rounded shadow">
+            </div>
+            <div class="section-content col-md-6">
+                <h2>LED Display Solutions</h2>
+                <p>LED video walls are a sheer display of innovation, beauty, and creativity...</p>
+                <ul>
+                    <li>Powerful IPS panel displays vivid images.</li>
+                    <li>Ultra-narrow bezel enables seamless display.</li>
+                    <li>Available in different technologies.</li>
+                    <li>Perfect fit for any business environment.</li>
+                </ul>
+                <a href="#" class="btn-service btn-primary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="row service align-items-center mb-3">
+            <div class="col-md-6 service-image">
+                <img src="img/service3.jpg" alt="Service 1 Image" class="img-fluid rounded shadow">
+            </div>
+            <div class="section-content col-md-6">
+                <h2>Smart Street Light Solutions</h2>
+                <p>Most economical lamp-level street lighting remote management solution available on the market as it
+                    is easy to implement, needs no additional investments to prepare the deployment and starts saving
+                    money right after the first unit is installed.</p>
+                <ul>
+                    <li>Superior & smart lighting with powerful performance.</li>
+                    <li>Energy costs are reduced by up to 35%.</li>
+                    <li>Perfect for all kind os weather conditions.</li>
+                    <li>Easy installation and maintenance.</li>
+                </ul>
+                <a href="#" class="btn-service btn-primary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="row service-right align-items-center mb-3 flex-md-row-reverse">
+            <div class="col-md-6 service-image">
+                <img src="img/service4.jpg" alt="Service 2 Image" class="img-fluid rounded shadow">
+            </div>
+            <div class="section-content col-md-6">
+                <h2>Wireless Surveillance Solutions</h2>
+                <p>Surveillance System may operate continuously or only as required to monitor a particular event.
+                    Camera’s are used in public areas for crime prevention. Get fully-featured, professional-grade
+                    Surveillance Systems that are easy to install and simple to use.</p>
+                <ul>
+                    <li>Ability to remotely manage Security systems.</li>
+                    <li>Watch live stream of your premises.</li>
+                    <li>Remotely pan & tilt the cameras on your phone.</li>
+                    <li>Coordinated zoom and movement of several cameras.</li>
+                </ul>
+                <a href="#" class="btn-service btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section" id="product-section">
+        <div class="container-fluid page-content">
+            <div class="heading-container">
+                <div class="line"></div>
+                <h2 class="animated-heading">Our <span class="highlighted-text">Products</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-mountain">
+                        <div class="textContent">
+                            <h2>Mountain View</h2>
+                            <p>Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                the mountains</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-beach">
+                        <div class="textContent">
+                            <h2>To The Beach</h2>
+                            <p>Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                the mountains</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-desert">
+                        <div class="textContent">
+                            <h2>Desert Destinations</h2>
+                            <p>Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                the mountains</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-galaxy">
+                        <div class="textContent">
+                            <h2>Explore The Galaxy</h2>
+                            <p>Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                the mountains</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-sec">
+                        <div class="textContent">
+                            <h2>Explore The Galaxy</h2>
+                            <p>Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                the mountains</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-section">
+                        <div class="textContent">
+                            <h2>Explore The Galaxy</h2>
+                            <p>Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                the mountains</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="contact-section">
+        <div class="container py-5" id="contact-section-content">
+            <div class="heading-container">
+                <div class="line"></div>
+                <h2 class="animated-heading"><span class="highlighted-text">Contact</span> Us</h2>
+                <div class="line"></div>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-6">
+                    <div class="row row-cols-md-2 g-4" class="contact-content">
+                        <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="aos-item__inner">
+                                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                    <div class="d-flex justify-content-start">
+                                        <i class="fa-solid fa-envelope h3 pe-2"></i>
+                                        <span class="h5">Email</span>
+                                    </div>
+                                    <span>example@domain.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="aos-item__inner">
+                                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                    <div class="d-flex justify-content-start">
+                                        <i class="fa-solid fa-phone h3 pe-2"></i>
+                                        <span class="h5">Phone</span>
+                                    </div>
+                                    <span>+0123456789, +9876543210</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="aos-item__inner">
+                            <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                                <div class="d-flex justify-content-start">
+                                    <i class="fa-solid fa-location-pin h3 pe-2"></i>
+                                    <span class="h5">Office location</span>
+                                </div>
+                                <span>#007, Street name, Bigtown BG23 4YZ, England</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+                        <div class="mt-4 w-100 aos-item__inner">
+                            <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                    href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on
+                                    map</a></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Block -->
+                <div class="col-xl-6">
+                    <h2 class="pb-4">Leave a message</h2>
+                    <div class="row g-4">
+                        <div class="col-6 mb-3">
+                            <label for="fname" class="form-label">First Name</label>
+                            <input type="text" name="first_name" class="form-control" id="fname" placeholder="John">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <input type="text" name="last_name" class="form-control" id="lname" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" name="phone" class="form-control" id="phone" placeholder="+1234567890">
+                    </div>
+                    <!-- <div class="mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country">
+                                <option value="USA">USA</option>
+                                <option value="Non-USA">Non USA</option>
+                            </select>
+                        </div> -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark" onclick="sendEmail()">Send Message</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Android App</a></li>
+                                <li><a href="#">ios App</a></li>
+                                <li><a href="#">Desktop</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">My tasks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Term &amp; conditions</a></li>
+                                <li><a href="#">Reporting</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support Policy</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com"
+                                target="_blank">CakeCounter</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ZQwUXmHt_SisW25Ul",
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
